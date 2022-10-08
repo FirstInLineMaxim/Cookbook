@@ -2,13 +2,25 @@
 
 /* Share Recipe Button declaration */
 document.getElementById('recipeButton').addEventListener('click', () => {
-    alert('Nice, we want ALL your Recipes!!!')
-  });
+  alert('Nice, we want ALL your Recipes!!!')
+});
 
-  const displayTitle = document.querySelector(".title");
+const displayTitle = document.querySelector(".title");
 const hoverImage = document.querySelector(".first-food");
 const recipeButton = document.querySelector(".pizza-btn");
 const displayRecipe = document.querySelector(".result");
+
+const handleClick = () => {
+  return displayRecipe.innerHTML = pizzaRecipe
+}
+
+recipeButton.addEventListener("click", handleClick)
+
+const handleHover = () => {
+  return displayTitle.innerHTML= `Pizza`
+}
+
+hoverImage.addEventListener("mouseover", handleHover)
 const pizzaRecipe = `<table class="table table-of-ingredients" id="pizza-btn">
 <thead>
   <tr>
@@ -41,15 +53,3 @@ const pizzaRecipe = `<table class="table table-of-ingredients" id="pizza-btn">
 </table>`
 
 
-
-const handleClick = () => {
-  return displayRecipe.innerHTML = pizzaRecipe
-}
-
-recipeButton.addEventListener("click", handleClick)
-
-const handleHover = () => {
-  return displayTitle.innerHTML= `Pizza`
-}
-
-hoverImage.addEventListener("mouseover", handleHover)
