@@ -11,7 +11,7 @@ const recipeButton = document.querySelector(".pizza-btn");
 const displayRecipe = document.querySelector(".iframe-Recepie");
 
 
-recipeButton.addEventListener("click", handleClick)
+
 
 const handleClick = () => {
   return document.querySelector(".iframe-Recepie").innerHTML = `
@@ -84,7 +84,7 @@ const handleClick = () => {
       </table>`;
 }
 
-
+recipeButton.addEventListener("click", handleClick)
 
 const handleHover = () => {
   return displayTitle.innerHTML= `Pizza`
