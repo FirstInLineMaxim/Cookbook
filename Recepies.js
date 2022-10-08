@@ -89,7 +89,7 @@ const cutletRecipe = () => {
   
   <!--Image-->
   <div >
-      <img src="img/asianfoodpic/dumpling.jpg" class="img-fluid img-thumbnail" alt="dumpling" width="500" height="250" >
+      <img src="img/asianfoodpic/dumpling.jpg" class="img-fluid img-thumbnail" alt="dumpling">
   </div>
   
   
@@ -140,3 +140,87 @@ const cutletRecipe = () => {
   }
   
   dumplingBtn.addEventListener("click", dumplingRecipe)
+
+  const bellyRecipe = () => {
+    return document.querySelector(".iframe-Recepie").innerHTML = `
+    <!--TITLE-->
+    <div >
+        <p class="fs-1 fw-bold" style="font-family:'Abyssinica SIL', serif;">BRAISED PORK BELLY</p>
+    </div>
+
+    <!--horizontal line-->
+    <hr size="1px" width="350px" align="center" style="color:grey;" noshade>
+
+    <!--Description-->
+    <div>
+        <p class="fs-3 fw-light" style="font-family:'Cormorant Upright', serif;">Hong shao rou is a Chinese braised pork belly dish that is cooked in a braising liquid made with soy sauce, sugar, and various aromatics and spices. It is similar to my Braised Chinese Chicken Wings recipe, but hong shao rou is a bit more complex of a dish, using a few more aromatics to create an even more amazing flavor.</p>
+    </div>
+    
+    <!--Image-->
+    <div  >
+        <img src="img/Recepies/Chinese-braised-pork/chinese-braised-pork-belly-683x1024.jpg.webp" class="img-fluid img-thumbnail" alt="yoguart">
+    </div>
+
+
+    <!--Table-->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Amount</th>
+            <th scope="col">Ingridient</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1.5 pounds</th>
+            <td>thick pork belly (about 1.5 inches wide; skin on)</td>
+          </tr>
+          <tr>
+            <th scope="row">3 cups</th>
+            <td>water</td>
+          </tr>
+          <tr>
+            <th scope="row">2 cloves</th>
+            <td colspan="2">garlic (crushed)</td>
+          </tr>
+          <tr>
+            <th scope="row">1/2 inch</th>
+            <td colspan="2">ginger (sliced thin)</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td colspan="2">star anise</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td colspan="2">Szechuan peppercorn (optional if can’t find at grocery store)</td>
+          </tr>
+          <tr>
+            <th scope="row">1/2</th>
+            <td colspan="2">cinnamon stick</td>
+          </tr>
+          <tr>
+            <th scope="row">2 tbs</th>
+            <td colspan="2">cooking oil</td>
+          </tr>
+          <tr>
+            <th scope="row">7 tablespoons</th>
+            <td colspan="2">brown sugar</td>
+          </tr>
+          <tr>
+            <th scope="row">2 tablespoons</th>
+            <td colspan="2">light soy sauce</td>
+          </tr>
+          <tr>
+            <th scope="row">4 tablespoons</th>
+            <td colspan="2">dark soy sauce</td>
+          </tr>
+          <tr>
+            <th scope="row">1 tablespoons</th>
+            <td colspan="2">Shaoxing wine (or dry sherry)</td>
+          </tr>
+        </tbody>
+      </table>`;
+  }
+  
+  bellyBtn.addEventListener("click", bellyRecipe)
