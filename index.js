@@ -14,7 +14,7 @@ const displayRecipe = document.querySelector(".iframe-Recepie");
 recipeButton.addEventListener("click", handleClick)
 
 const handleClick = () => {
-  return document.querySelector(".iframe-Recepie").src = "/img/Recepies/Dumpling.html";
+  return document.querySelector(".iframe-Recepie").innerHTML = ``;
 }
 
 
