@@ -8,17 +8,27 @@ document.getElementById('recipeButton').addEventListener('click', () => {
 const displayTitle = document.querySelector(".title");
 const hoverImage = document.querySelector(".first-food");
 const recipeButton = document.querySelector(".pizza-btn");
-const displayRecipe = document.querySelector(".result");
+const displayRecipe = document.querySelector(".iframe-Recepie");
 
-const handleClick = () => {
-  return displayRecipe.innerHTML = pizzaRecipe
-}
 
 recipeButton.addEventListener("click", handleClick)
+
+const handleClick = () => {
+  return document.querySelector(".iframe-Recepie").src = "/img/Recepies/Dumpling.html";
+}
+
+
 
 const handleHover = () => {
   return displayTitle.innerHTML= `Pizza`
 }
+
+
+function changeIframe(){
+  document.querySelector(".iframe-Recepie").src = "img\Recepies\Dumpling.html";
+}
+
+
 
 hoverImage.addEventListener("mouseover", handleHover)
 const pizzaRecipe = `<table class="table table-of-ingredients" id="pizza-btn">
