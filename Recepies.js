@@ -16,7 +16,7 @@ const cutletRecipe = () => {
 
             <!--Description-->
             <div>
-                <p class="fs-3 fw-light" style="font-family:'Cormorant Upright', serif;">Wiener schnitzel means "Viennese cutlet" in German, and it is one of Austria's most traditional and representative dishes. So much so, in fact, that its definition is fiercely protected by Austrian law. It must be made of veal; when made with any other type of meat, it cannot technically be called Wiener schnitzel.</p>
+                <p class="fs-3 fw-light text-break" style="font-family:'Cormorant Upright', serif;">Wiener schnitzel means "Viennese cutlet" in German, and it is one of Austria's most traditional and representative dishes. So much so, in fact, that its definition is fiercely protected by Austrian law. It must be made of veal; when made with any other type of meat, it cannot technically be called Wiener schnitzel.</p>
             </div>
             
             <!--Image-->
@@ -157,8 +157,8 @@ const cutletRecipe = () => {
     </div>
     
     <!--Image-->
-    <div  >
-        <img src="img/Recepies/Chinese-braised-pork/chinese-braised-pork-belly-683x1024.jpg.webp" class="img-fluid img-thumbnail" alt="yoguart">
+    <div>
+        <img src="img/Recepies/Chinese-braised-pork/chinese-braised-pork-belly-683x1024.jpg.webp" class="img-fluid img-thumbnail" alt="yoguart" style="max-height: 500px;">
     </div>
 
 
@@ -224,3 +224,41 @@ const cutletRecipe = () => {
   }
   
   bellyBtn.addEventListener("click", bellyRecipe)
+
+  const pizzaRecipe = () => {
+    return document.querySelector(".iframe-Recepie").innerHTML = `
+    <!--TITLE-->
+    <div class="col-9">
+    <div class="row ">
+      <div class="col d-flex flex-row justify-content-around">
+        <div ><img src="./resource/img/calendar-days-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/face-smile-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/file-pdf-regular.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/house-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/list-check-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/location-arrow-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/pen-to-square-regular.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/ruler-solid.svg" alt="house" width="20" height="28"></div>
+        <div ><img src="./resource/img/trash-solid.svg" alt="house" width="20" height="28"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row">
+        <div class="my-3">
+          <h1 class="col border-secondary border-bottom title py-2 fw-bolder" id="pizza-btn"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col">Dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly.</p>
+      </div>
+      <div class="row img-container my-5">
+        <img class="d-block first-food" src="./resource/pizza-margherita.webp" alt="">
+      </div>
+      <div class="row">
+        <div class="col overflow-auto result"></div>
+      </div>
+    </div>
+  </div>`;
+  }
+  
+  pizzaBtn.addEventListener("click", pizzaRecipe)
