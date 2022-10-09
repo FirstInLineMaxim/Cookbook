@@ -4,6 +4,31 @@ margin:0;
 
 }
 
+
+.urlImg {
+  width: 185px;
+  height:185px;
+  display:block;
+  background-image: url('img/duck.png');
+
+}
+.urlImg:hover {
+  background-image: url('img/peng.png');
+
+
+#pizzaimg {
+
+
+
+}
+
+#pizzaimg:hover {
+background-color: bisque;
+
+
+}
+
+
 #pizzaheight {
 height:100vh;
 
