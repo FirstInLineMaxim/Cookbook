@@ -27,10 +27,12 @@
                 </div>
                 <div class="row ">
                   <div class="col text-center mt-5">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary btn-lg dropdown-toggle dropbtn col-lg-10 "  data-bs-toggle="dropdown" aria-expanded="false">Food Menu</button>
-                      <div class="dropdown-content">
-                        <a  id="pizza-btn" class="dropdown-item " href="#pizza-btn">Pizza</a>
+                    <div class="btn-group dropup">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
+                      </button>
+                      <div class="dropdown-menu">
+                      <a  id="pizza-btn" class="dropdown-item " href="#pizza-btn">Pizza</a>
                         <a  id="curry-button" class="dropdown-item" href="#">Pineapple-Curry</a>
                         <a id="dumpling-button" class="dropdown-item" href="#">Dumplings</a>
                         <a id="Pork-Belly-button" class="dropdown-item" href="#">Pork Belly</a>
@@ -38,7 +40,20 @@
                     </div>
                   </div>     
             </div>   
-            
+            <div class ="row">
+              <div class="col">
+                <ul>
+                  <li>P</li>
+                  <li>C</li>
+                 
+                </ul>
+              </div> 
+              <div class="col">
+                <li>D</li>
+                <li>B</li>
+              </div>
+
+            </div>
               </div>     
         
               
@@ -49,7 +64,8 @@
 
 
         <!--rightbox 5column-->
-            <div id ="rightside" class="d-flex row flex-column mb-3 col-8" style="background-color: paleturquoise;">
+            <div id ="rightside" class="d-flex row flex-column  col-8" style="background-color: paleturquoise;">
+              <div class="row">
 
         <!--NAVBAR-->
 
@@ -64,19 +80,20 @@
               <div class="p-2"><img src="img/pen-to-square-regular.svg" alt="house" width="20" height="28"></div>
               <div class="p-2"><img src="img/ruler-solid.svg" alt="house" width="20" height="28"></div>
               <div class="p-2"><img src="img/trash-solid.svg" alt="house" width="20" height="28"></div> 
+              
       </div>
       </div>
-      <div class="row">
-        <iframe id="rec-show" src="curry.html" frameborder="0" height="1000" width="1000"></iframe>
+      
+        <iframe id="rec-show" src="curry.html" frameborder="0" height="auto" width="auto"></iframe>
       </div>
-        </div>
-        </div>
+      </div>
+        
           
            
-
-                <button type="button" class="btn btn-outline-success btn-lg" id="recipeButton">Share</button>
+        <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-success btn-lg" id="recipeButton" style="background-color: paleturquoise" width="100%">Share</button>
             
-            
+            </div>
         
         
         
