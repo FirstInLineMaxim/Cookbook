@@ -4,7 +4,7 @@
 document.getElementById('recipeButton').addEventListener('click', () => {
     alert('Nice, we want ALL your Recipes!!!')
   });
-
+/*
   const displayTitle = document.querySelector(".title");
 const hoverImage = document.querySelector(".first-food");
 const recipeButton = document.querySelector(".pizza-btn");
@@ -42,7 +42,7 @@ const pizzaRecipe = `<table class="table table-of-ingredients" id="pizza-btn">
 
 
 
-const handleClick = () => {
+/* const handleClick = () => {
   return displayRecipe.innerHTML = pizzaRecipe
 }
 
@@ -52,4 +52,25 @@ const handleHover = () => {
   return displayTitle.innerHTML= `Pizza`
 }
 
-hoverImage.addEventListener("mouseover", handleHover)
+hoverImage.addEventListener("mouseover", handleHover)*/
+
+
+const handleClickcurry = () => {
+document.querySelector('#rec-show').src = "curry.html"
+}
+const handleClickpizza = () => {
+  document.querySelector('#rec-show').src = "pizza.html"
+  }
+  const handleClickdumpling = () => {
+    document.querySelector('#rec-show').src = "dumpling table added.html"
+    }
+    const handleClickpork = () => {
+      document.querySelector('#rec-show').src = "braised-pork-belly.html"
+      }
+
+
+
+document.querySelector('#curry-button').addEventListener("click", handleClickcurry)
+document.querySelector('#pizza-btn').addEventListener("click", handleClickpizza)
+document.querySelector('#dumpling-button').addEventListener("click", handleClickdumpling)
+document.querySelector('#Pork-Belly-button').addEventListener("click", handleClickpork)
