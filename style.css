@@ -4,8 +4,20 @@ font-family:fantasy;
 
 }
 
-body {
-  border: 1px solid blue; 
+#leftside {
+  height:100vh;
+}
+
+#rightside {
+height:100vh;
+
+
+}
+
+#rec-show{
+height:580%;
+
+
 }
 
 
