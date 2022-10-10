@@ -17,7 +17,10 @@ margin:0;
 
 }
 
+.listitem {
 
+  margin:0 0 20px 0;
+}
 
 
 
@@ -36,10 +39,11 @@ margin:0;
 
 }
 
-#Dumplingimg:hover {
-background-color: bisque;
+#Dumplingimg:hover + .hide {
 
 
+display: block;
+  color: black;
 }
 
 #Porkimg:hover + .hide {
