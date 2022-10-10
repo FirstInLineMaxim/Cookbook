@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/cs/style.css">
     <title>Braised Pork Belly</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -31,7 +31,7 @@
       <!-- Title -->
       <div class="row">
         <div class="my-3">
-          <h1 class="col border-secondary border-bottom pork-title py-2 fw-bolder" id="pizza-btn" style="font-family: 'Alkalami', serif;">Braised Pork Belly</h1>
+          <h1 class="col border-secondary border-bottom pork-title py-2 fw-bolder" id="pizza-btn" style="font-family: 'Alkalami', serif;"></h1>
         </div>
       </div>
       
@@ -43,7 +43,7 @@
       
       <!--Image-->
       <div class="row">
-          <img src="../resource/img/pexels-amanda-lim-8256983.jpg" class="d-block img-fluid img-thumbnail hover-pork" alt="braised pork belly" width="600" height="250" >
+          <img src="../resource/img/pexels-amanda-lim-8256983.jpg" class="d-block img-fluid img-thumbnail hover-pork" alt="braised pork belly" width="600" height="250" onmouseover="displayPorkTitle()">
       </div>
         
             <!--Table-->
@@ -109,7 +109,14 @@
             </div>
         </div>
     
-
+        <script>
+          const porkTitle = document.querySelector(".pork-title");
+        
+          function displayPorkTitle() {
+            porkTitle.innerHTML = `Braised Pork Belly`;
+          }
+        
+        </script>   
 
 
 
