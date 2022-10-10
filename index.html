@@ -25,13 +25,13 @@
                     
                   <hr size="1px" width="50%" align="center" style="color:grey;" noshade>
                 </div>
-                <div class="row ">
-                  <div class="col text-center mt-5">
-                    <div class="btn-group dropup">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="row d-flex justify-content-start ">
+                  <div class="col text-center mt-5 d-flex  flex-column justify-content-start align-items-start">
+                    <div class="btn-group dropup d-grid gap-2 d-md-block">
+                      <button type="button" class="btn btn-secondar dropdown-toggle" style="background-color: paleturquoise" data-bs-toggle="dropdown" aria-expanded="false">
                         Recipe
                       </button>
-                      <div class="dropdown-menu">
+                      <div class="dropdown-menu" style="background-color: pink;">
                       <a  id="pizza-btn" class="dropdown-item " href="#pizza-btn">Pizza</a>
                         <a  id="curry-button" class="dropdown-item" href="#">Pineapple-Curry</a>
                         <a id="dumpling-button" class="dropdown-item" href="#">Dumplings</a>
@@ -41,18 +41,24 @@
                   </div>     
             </div>   
             <div class ="row">
-              <div class="col">
-                <ul>
-                  <li id="pizzaimg" style="color: rgb(24, 20, 22)">P</li>
-                  <li id="curryimg"style="color: paleturquoise">C</li>
-                 
-                </ul>
+              <div class="col d-flex flex-row   justify-content-center align-items-center">
+                <div class="row">
+                  <div class="col">
+                <ul> <p class="hide">Pizza</p>
+                  <li id="pizzaimg" style="color: rgb(24, 20, 22)">P <img src ="pizzaRecipe/new-cookbook/resource/pizza-margherita.webp" height="100" ></li>
+                  <p class="hide">Pizza</p>
+                  <li id="curryimg"style="color: paleturquoise">C<img src ="img/pexels-cats-coming-4611425.jpg" height="100"></li>
+                  <p class="hide">Curry</p>
+               </ul>
+                </div>
+                </div>
               </div> 
-              <div class="col">
-                <li id="Dumplingimg"style="color: rgb(121, 128, 224)">D</li>
-                <li id="Porkimg"style="color: rgb(177, 91, 42)">B</li>
-              </div>
-
+              <div class="col d-flex justify-content-around">
+                <li id="Dumplingimg"style="color: rgb(121, 128, 224)">D<img src ="img/asianfoodpic/dumpling.jpg" height="100"></li>
+                <p class="hide">Dumpling</p>
+                <li id="Porkimg"style="color: rgb(177, 91, 42)">B <img src ="img/istockphoto-175381232-612x612.jpg" height="100"></li>
+                <p class="hide">Pork</p>
+                </div>
             </div>
               </div>     
         
@@ -88,7 +94,8 @@
       </div>
       </div>
         
-          
+      <div class="myDIV">Hover over me.</div>
+      <div class="hide">I am shown when someone hovers over the div above.</div>
            
         <div class="d-grid gap-2">
                 <button type="button" class="btn btn-outline-success btn-lg" id="recipeButton" style="background-color: paleturquoise" width="100%">Share</button>

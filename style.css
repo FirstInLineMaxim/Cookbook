@@ -15,16 +15,42 @@ margin:0;
 .urlImg:hover {
   background-image: url('img/peng.png');
 
+}
 
-#pizzaimg {
 
+
+
+
+.hide {
+  display: none;
+}
+
+#pizzaimg:hover + .hide {
+  display: block;
+  color: black;
+}
+#curryimg:hover + .hide {
+
+  display: block;
+  color: black;
+
+}
+
+#Dumplingimg:hover {
+background-color: bisque;
 
 
 }
 
-#pizzaimg:hover {
-background-color: bisque;
+#Porkimg:hover + .hide {
 
+  display: block;
+  color: black;
+
+}#curryimg:hover + .hide {
+
+  display: block;
+  color: black;
 
 }
 

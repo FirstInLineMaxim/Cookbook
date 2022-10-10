@@ -74,3 +74,27 @@ document.querySelector('#curry-button').addEventListener("click", handleClickcur
 document.querySelector('#pizza-btn').addEventListener("click", handleClickpizza)
 document.querySelector('#dumpling-button').addEventListener("click", handleClickdumpling)
 document.querySelector('#Pork-Belly-button').addEventListener("click", handleClickpork)
+
+
+const handleClickcurryimg = () => {
+  document.querySelector('#rec-show').src = "curry.html"
+  }
+  const handleClickpizzaimg = () => {
+    document.querySelector('#rec-show').src = "pizza.html"
+    }
+    const handleClickdumplingimg = () => {
+      document.querySelector('#rec-show').src = "dumpling table added.html"
+      }
+      const handleClickporkimg = () => {
+        document.querySelector('#rec-show').src = "braised-pork-belly.html"
+        }
+  
+
+
+
+
+
+document.querySelector('#curryimg').addEventListener("mouseover", handleClickcurryimg)
+document.querySelector('#pizzaimg').addEventListener("mouseover", handleClickpizzaimg)
+document.querySelector('#Dumplingimg').addEventListener("mouseover", handleClickdumplingimg)
+document.querySelector('#Porkimg').addEventListener("mouseover", handleClickporkimg)
